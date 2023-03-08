@@ -7,10 +7,10 @@ in the `src/pages` you can add Vue files to test your component/directive. When 
 
 ## Install the dependencies
 ```bash
-yarn
 cd app-extension && yarn link && cd ..
 cd ui && yarn && yarn build && cd ..
 cd dev && \
+  yarn && \
   yarn link "quasar-app-extension-test-ext" && \
   quasar ext invoke test-ext
 ```
