@@ -17,7 +17,9 @@ cd dev && \
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
-quasar dev
+# watch file changes to trigger build scripts
+cd ui && yarn watch && cd .. && \
+cd dev && quasar dev
 ```
 
 
